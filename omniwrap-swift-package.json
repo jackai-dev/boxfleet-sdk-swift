@@ -1,0 +1,61 @@
+{
+  "artifact_type": "swift-sdk",
+  "package_manifest": "Package.swift",
+  "package_name": "BoxFleetHostedControlPlaneBoxfleetIoSDK",
+  "package_version": "0.3.0",
+  "runtime_floor": "5.9",
+  "source_files": [
+    {
+      "path": ".omniwrap-skill-manifest.json",
+      "sha256": "300052a42c07e0ecde3dbbd29f2ea4a903355d7836aeed3cbbbc641686602b7d",
+      "size_bytes": 409
+    },
+    {
+      "path": "agent-session.json",
+      "sha256": "dbb02d755e1038f2d3b65d871339117de0f36b1a06d5867667c6716c1b6d2815",
+      "size_bytes": 230239
+    },
+    {
+      "path": "AGENT_SESSION.md",
+      "sha256": "e9260b11c677f525a04e085eda067c4615c6653238f78c78c9197de55546e883",
+      "size_bytes": 699
+    },
+    {
+      "path": "api.md",
+      "sha256": "d7fde4a488dd847b8a9b709567b2d52bb8143edb4dbf0936701a8d936f432ead",
+      "size_bytes": 94807
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "fb11dfcf40507855f2fbe0fdcee036cfe549b3ef7e52ebeb09e0dd66d552a128",
+      "size_bytes": 282
+    },
+    {
+      "path": "Package.swift",
+      "sha256": "defad1ff7eb8508bf4be19adc8d304faf3e94f386a467edfdf0f6b1df7078beb",
+      "size_bytes": 573
+    },
+    {
+      "path": "README.md",
+      "sha256": "d04ccef5e7bef559d2f8bb46fa332998bde965e852859bccea26fffdb7bd2ed6",
+      "size_bytes": 843
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "4e2dc999638f1086cb5a2198f5d02adc6d3e5c8367897ba2e0a6e246091e23ce",
+      "size_bytes": 25003
+    },
+    {
+      "path": "Sources/AgentSession.swift",
+      "sha256": "fffb2a45e0ca038b0310e4d75a01a3d20ddb24a6f003ae253d19407fd7067ee5",
+      "size_bytes": 1822
+    },
+    {
+      "path": "Sources/Client.swift",
+      "sha256": "d722411fc2ed87f4c8362c93c65d66f1e2f32280b090da74346be28fbe16be77",
+      "size_bytes": 30261
+    }
+  ],
+  "source_version": "0.3.0",
+  "target": "swift"
+}

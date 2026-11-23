@@ -1,0 +1,14 @@
+{
+  "agent_protocols_supported": [
+    "mcp-code-mode",
+    "a2a-1.0",
+    "ag-ui",
+    "mcp-tasks"
+  ],
+  "client_name": "BoxFleetHostedControlPlaneBoxfleetIoClient",
+  "language": "swift",
+  "operation_count": 56,
+  "package_name": "BoxFleetHostedControlPlaneBoxfleetIoSDK",
+  "schema": "omniwrap.embedded-skill-manifest/v1",
+  "sha256": "4e2dc999638f1086cb5a2198f5d02adc6d3e5c8367897ba2e0a6e246091e23ce"
+}

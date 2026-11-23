@@ -1,0 +1,412 @@
+{
+  "contract_fingerprint": "e3fd4c744ae8933c0e0bd0c21a692897795a14657e577fb82108500d39f2ac8d",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "BoxFleetHostedControlPlaneBoxfleetIoSDK@0.3.0",
+        "ecosystem": "SwiftPM",
+        "entry": "OmniWrapClient",
+        "import": "import BoxFleetHostedControlPlaneBoxfleetIoSDK"
+      },
+      "operations": {
+        "cancelJob": {
+          "member": "cancelJob",
+          "method": "POST",
+          "path": "/v1/jobs/{jobId}/cancel",
+          "resource": "jobs",
+          "signature": "func cancelJob(jobId: String) async throws -> (Int, Data)"
+        },
+        "closeHostedWorkspace": {
+          "member": "closeHostedWorkspace",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/close",
+          "resource": "workspaces",
+          "signature": "func closeHostedWorkspace(workspaceId: String) async throws -> (Int, Data)"
+        },
+        "closePersistentBox": {
+          "member": "closePersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/close",
+          "resource": "organizations",
+          "signature": "func closePersistentBox(organizationId: String, boxId: String) async throws -> (Int, Data)"
+        },
+        "controlUser": {
+          "member": "controlUser",
+          "method": "POST",
+          "path": "/v1/admin/users",
+          "resource": "admin",
+          "signature": "func controlUser(body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "createBillingPortal": {
+          "member": "createBillingPortal",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/billing/portal",
+          "resource": "organizations",
+          "signature": "func createBillingPortal(organizationId: String) async throws -> (Int, Data)"
+        },
+        "createBox": {
+          "member": "createBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/boxes",
+          "resource": "organizations",
+          "signature": "func createBox(organizationId: String, body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "createCheckout": {
+          "member": "createCheckout",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/billing/checkout",
+          "resource": "organizations",
+          "signature": "func createCheckout(organizationId: String, body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "getAccountsConfig": {
+          "member": "getAccountsConfig",
+          "method": "GET",
+          "path": "/v1/accounts/config",
+          "resource": "accounts",
+          "signature": "func getAccountsConfig() async throws -> (Int, Data)"
+        },
+        "getAdminConsole": {
+          "member": "getAdminConsole",
+          "method": "GET",
+          "path": "/v1/admin/console",
+          "resource": "admin",
+          "signature": "func getAdminConsole() async throws -> (Int, Data)"
+        },
+        "getAdminPlans": {
+          "member": "getAdminPlans",
+          "method": "GET",
+          "path": "/v1/admin/plans",
+          "resource": "admin",
+          "signature": "func getAdminPlans() async throws -> (Int, Data)"
+        },
+        "getAuthGate": {
+          "member": "getAuthGate",
+          "method": "GET",
+          "path": "/v1/auth/gate",
+          "resource": "auth",
+          "signature": "func getAuthGate() async throws -> (Int, Data)"
+        },
+        "getBilling": {
+          "member": "getBilling",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/billing",
+          "resource": "organizations",
+          "signature": "func getBilling(organizationId: String) async throws -> (Int, Data)"
+        },
+        "getBox": {
+          "member": "getBox",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/boxes/{boxId}",
+          "resource": "organizations",
+          "signature": "func getBox(organizationId: String, boxId: String) async throws -> (Int, Data)"
+        },
+        "getEntitlements": {
+          "member": "getEntitlements",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/entitlements",
+          "resource": "organizations",
+          "signature": "func getEntitlements(organizationId: String) async throws -> (Int, Data)"
+        },
+        "getFleet": {
+          "member": "getFleet",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/fleet",
+          "resource": "organizations",
+          "signature": "func getFleet(organizationId: String) async throws -> (Int, Data)"
+        },
+        "getFleetPolicy": {
+          "member": "getFleetPolicy",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/fleet/policy",
+          "resource": "organizations",
+          "signature": "func getFleetPolicy(organizationId: String) async throws -> (Int, Data)"
+        },
+        "getHealth": {
+          "member": "getHealth",
+          "method": "GET",
+          "path": "/health",
+          "resource": "health",
+          "signature": "func getHealth() async throws -> (Int, Data)"
+        },
+        "getHostedWorkspace": {
+          "member": "getHostedWorkspace",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}",
+          "resource": "workspaces",
+          "signature": "func getHostedWorkspace(workspaceId: String) async throws -> (Int, Data)"
+        },
+        "getHostedWorkspaceOperation": {
+          "member": "getHostedWorkspaceOperation",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}/operations/{operationId}",
+          "resource": "workspaces",
+          "signature": "func getHostedWorkspaceOperation(workspaceId: String, operationId: String) async throws -> (Int, Data)"
+        },
+        "getHostedWorkspaceSource": {
+          "member": "getHostedWorkspaceSource",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}/source",
+          "resource": "workspaces",
+          "signature": "func getHostedWorkspaceSource(workspaceId: String) async throws -> (Int, Data)"
+        },
+        "getJob": {
+          "member": "getJob",
+          "method": "GET",
+          "path": "/v1/jobs/{jobId}",
+          "resource": "jobs",
+          "signature": "func getJob(jobId: String) async throws -> (Int, Data)"
+        },
+        "getPersistentBox": {
+          "member": "getPersistentBox",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}",
+          "resource": "organizations",
+          "signature": "func getPersistentBox(organizationId: String, boxId: String) async throws -> (Int, Data)"
+        },
+        "getPersistentBoxProviderUsage": {
+          "member": "getPersistentBoxProviderUsage",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/usage",
+          "resource": "organizations",
+          "signature": "func getPersistentBoxProviderUsage(organizationId: String, boxId: String, query: [String: String] = [:]) async throws -> (Int, Data)"
+        },
+        "getPlans": {
+          "member": "getPlans",
+          "method": "GET",
+          "path": "/v1/plans",
+          "resource": "plans",
+          "signature": "func getPlans() async throws -> (Int, Data)"
+        },
+        "ingestTelemetry": {
+          "member": "ingestTelemetry",
+          "method": "POST",
+          "path": "/v1/telemetry/ingest",
+          "resource": "telemetry",
+          "signature": "func ingestTelemetry(body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "listBoxes": {
+          "member": "listBoxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/boxes",
+          "resource": "organizations",
+          "signature": "func listBoxes(organizationId: String) async throws -> (Int, Data)"
+        },
+        "listHostedWorkspaces": {
+          "member": "listHostedWorkspaces",
+          "method": "GET",
+          "path": "/v1/workspaces",
+          "resource": "workspaces",
+          "signature": "func listHostedWorkspaces() async throws -> (Int, Data)"
+        },
+        "listInvoices": {
+          "member": "listInvoices",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/billing/invoices",
+          "resource": "organizations",
+          "signature": "func listInvoices(organizationId: String) async throws -> (Int, Data)"
+        },
+        "listJobEvents": {
+          "member": "listJobEvents",
+          "method": "GET",
+          "path": "/v1/jobs/{jobId}/events",
+          "resource": "jobs",
+          "signature": "func listJobEvents(jobId: String) async throws -> (Int, Data)"
+        },
+        "listJobs": {
+          "member": "listJobs",
+          "method": "GET",
+          "path": "/v1/jobs",
+          "resource": "jobs",
+          "signature": "func listJobs() async throws -> (Int, Data)"
+        },
+        "listMembers": {
+          "member": "listMembers",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/members",
+          "resource": "organizations",
+          "signature": "func listMembers(organizationId: String) async throws -> (Int, Data)"
+        },
+        "listObservedBoxes": {
+          "member": "listObservedBoxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/observed-boxes",
+          "resource": "organizations",
+          "signature": "func listObservedBoxes(organizationId: String) async throws -> (Int, Data)"
+        },
+        "listPersistentBoxOffers": {
+          "member": "listPersistentBoxOffers",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/offers",
+          "resource": "organizations",
+          "signature": "func listPersistentBoxOffers(organizationId: String) async throws -> (Int, Data)"
+        },
+        "listPersistentBoxes": {
+          "member": "listPersistentBoxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes",
+          "resource": "organizations",
+          "signature": "func listPersistentBoxes(organizationId: String, query: [String: String] = [:]) async throws -> (Int, Data)"
+        },
+        "listUsers": {
+          "member": "listUsers",
+          "method": "GET",
+          "path": "/v1/admin/users",
+          "resource": "admin",
+          "signature": "func listUsers() async throws -> (Int, Data)"
+        },
+        "listWaitlist": {
+          "member": "listWaitlist",
+          "method": "GET",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "func listWaitlist() async throws -> (Int, Data)"
+        },
+        "openHostedWorkspace": {
+          "member": "openHostedWorkspace",
+          "method": "POST",
+          "path": "/v1/workspaces",
+          "resource": "workspaces",
+          "signature": "func openHostedWorkspace(body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "provisionPersistentBox": {
+          "member": "provisionPersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes",
+          "resource": "organizations",
+          "signature": "func provisionPersistentBox(organizationId: String, body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "putFleetPolicy": {
+          "member": "putFleetPolicy",
+          "method": "PUT",
+          "path": "/v1/organizations/{organizationId}/fleet/policy",
+          "resource": "organizations",
+          "signature": "func putFleetPolicy(organizationId: String, body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "readTelemetry": {
+          "member": "readTelemetry",
+          "method": "GET",
+          "path": "/v1/admin/telemetry",
+          "resource": "admin",
+          "signature": "func readTelemetry() async throws -> (Int, Data)"
+        },
+        "reconcilePersistentBox": {
+          "member": "reconcilePersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/reconcile",
+          "resource": "organizations",
+          "signature": "func reconcilePersistentBox(organizationId: String, boxId: String, body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "recoverHostedWorkspace": {
+          "member": "recoverHostedWorkspace",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/recover",
+          "resource": "workspaces",
+          "signature": "func recoverHostedWorkspace(workspaceId: String, body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "register": {
+          "member": "register",
+          "method": "POST",
+          "path": "/v1/auth/register",
+          "resource": "auth",
+          "signature": "func register(body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "removeMember": {
+          "member": "removeMember",
+          "method": "DELETE",
+          "path": "/v1/organizations/{organizationId}/members/{userId}",
+          "resource": "organizations",
+          "signature": "func removeMember(organizationId: String, userId: String) async throws -> (Int, Data)"
+        },
+        "requestAccess": {
+          "member": "requestAccess",
+          "method": "POST",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "func requestAccess(body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "runHostedWorkspace": {
+          "member": "runHostedWorkspace",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/run",
+          "resource": "workspaces",
+          "signature": "func runHostedWorkspace(workspaceId: String, body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "startPersistentBox": {
+          "member": "startPersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/start",
+          "resource": "organizations",
+          "signature": "func startPersistentBox(organizationId: String, boxId: String, body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "stopBox": {
+          "member": "stopBox",
+          "method": "DELETE",
+          "path": "/v1/organizations/{organizationId}/boxes/{boxId}",
+          "resource": "organizations",
+          "signature": "func stopBox(organizationId: String, boxId: String) async throws -> (Int, Data)"
+        },
+        "stopPersistentBox": {
+          "member": "stopPersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/stop",
+          "resource": "organizations",
+          "signature": "func stopPersistentBox(organizationId: String, boxId: String, body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "stripeWebhook": {
+          "member": "stripeWebhook",
+          "method": "POST",
+          "path": "/v1/billing/stripe/webhook",
+          "resource": "billing",
+          "signature": "func stripeWebhook() async throws -> (Int, Data)"
+        },
+        "submitJob": {
+          "member": "submitJob",
+          "method": "POST",
+          "path": "/v1/jobs",
+          "resource": "jobs",
+          "signature": "func submitJob(body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "syncObservedBoxes": {
+          "member": "syncObservedBoxes",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/observed-boxes/sync",
+          "resource": "organizations",
+          "signature": "func syncObservedBoxes(organizationId: String, body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "updateAuthGate": {
+          "member": "updateAuthGate",
+          "method": "PUT",
+          "path": "/v1/auth/gate",
+          "resource": "auth",
+          "signature": "func updateAuthGate(body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "updatePlan": {
+          "member": "updatePlan",
+          "method": "POST",
+          "path": "/v1/admin/plans",
+          "resource": "admin",
+          "signature": "func updatePlan(body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "upsertMember": {
+          "member": "upsertMember",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/members",
+          "resource": "organizations",
+          "signature": "func upsertMember(organizationId: String, body: [String: Any]? = nil) async throws -> (Int, Data)"
+        },
+        "verifyLicense": {
+          "member": "verifyLicense",
+          "method": "POST",
+          "path": "/v1/auth/verify",
+          "resource": "auth",
+          "signature": "func verifyLicense(body: [String: Any]? = nil) async throws -> (Int, Data)"
+        }
+      },
+      "package_directory": "../boxfleethostedcontrolplaneboxfleetiosdk-swift-sdk",
+      "package_manifest": "Package.swift",
+      "reference": "api.md",
+      "renderer": "swift"
+    }
+  ]
+}
